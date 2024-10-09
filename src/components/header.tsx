@@ -4,7 +4,7 @@ import SearchComponent from "./search";
 import { useFetchData } from "../hook/FetchContext";
 
 export const HeaderTools = () => {
-  const { handleFetchData, users } = useFetchData();
+  const { handleFetchData } = useFetchData();
   return (
     <div className="headerTools">
       <SearchComponent />

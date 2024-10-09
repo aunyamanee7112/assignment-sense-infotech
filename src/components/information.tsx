@@ -1,5 +1,5 @@
 import React from "react";
-import { IAddressInfo, IData } from "../interface/app";
+import { IAddressInfo } from "../interface/app";
 
 const Information = ({address}:{address:IAddressInfo} ) => {
   const { city, country, state } = address;

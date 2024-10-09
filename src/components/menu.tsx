@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonComponent from "./button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PATH_LIST = [
   { path: "/", label: "Home" },

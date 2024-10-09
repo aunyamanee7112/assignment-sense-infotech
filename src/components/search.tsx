@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./mycomponent.css";
-import { IData } from "../interface/app";
 import { useSearchData } from "../hook/useSearchData";
 
-interface ISearchComponent {
-  data?: IData[];
-}
 const SearchComponent = () => {
   const { setSearchItem, searchItem } = useSearchData();
   return (
