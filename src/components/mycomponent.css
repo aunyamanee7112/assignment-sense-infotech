@@ -1,0 +1,51 @@
+.list-container{
+    border: 1px solid black;
+    padding: 15px 20px;
+    text-align: start;
+}
+
+.username:hover{
+    cursor: pointer;
+    color: palevioletred;
+}
+
+.info {
+    padding:10px 15px;
+    background: rgb(195, 195, 195);
+}
+
+.headerTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    inline-size: fit-content;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.fetctBtn{
+    padding: 10px;
+    inline-size: 300px;
+    background: #40e775;
+    color: white;
+    margin-block-start: 20px;
+    text-transform: uppercase;
+}
+.search {
+    padding: 10px;
+    inline-size: 300px;
+    margin-block-start: 20px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    outline-color: transparent;
+}
+
