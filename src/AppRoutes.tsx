@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-const About = React.lazy(() => import("./page/About"));
-const Contact = React.lazy(() => import("./page/Contact"));
+const QuestionSeconde = React.lazy(() => import("./page/Todolist"));
+const QuestionThird = React.lazy(() => import("./page/FromData"));
 const Home = React.lazy(() => import("./page/Home"));
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/About" element={<About />}></Route>
-      <Route path="/Contact" element={<Contact />}></Route>
+      <Route path="/question2" element={<QuestionSeconde />}></Route>
+      <Route path="/question3" element={<QuestionThird />}></Route>
     </Routes>
   );
 };

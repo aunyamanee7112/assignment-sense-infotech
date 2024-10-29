@@ -3,9 +3,9 @@ import ButtonComponent from "./button";
 import { Link } from "react-router-dom";
 
 const PATH_LIST = [
-  { path: "/", label: "Home" },
-  { path: "/About", label: "About" },
-  { path: "/Contact", label: "Contact" },
+  { path: "/question2", label: "Todo List" },
+  { path: "/question3", label: "Form Data" },
+  { path: "/", label: "Data Table" },
 ];
 const Menu = () => {
   return (

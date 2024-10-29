@@ -1,7 +1,25 @@
-.list-container{
+/* .list-container {
     border: 1px solid black;
     padding: 15px 20px;
     text-align: start;
+    
+} */
+table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    margin-block-start: 20px;
+    padding: 15px 20px;
+    
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
 }
 
 .username:hover{
@@ -49,3 +67,43 @@
     outline-color: transparent;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 10px;
+
+    div {
+       text-align: start;
+       margin-block-start: 10px;
+       padding: 2px;
+    }
+    
+    button {
+        text-align: center;
+        padding: 10px;
+        inline-size: 250px;
+        background: #000;
+        color: white;
+        border-radius: 5px;
+        margin-block-start: 15px;
+    }
+    input{
+        border: 1px solid gray;
+        padding: 10px 20px;
+        width: 100%;
+   } 
+}
+
+
+ul {
+    margin-block-start: 20px;
+    li {
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-around;
+
+        #delete {
+            color: red;
+        }
+    }
+}

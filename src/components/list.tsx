@@ -1,24 +1,33 @@
 import React, { useState } from "react";
 import "./mycomponent.css";
-import Information from "./information";
 
 const UserList = ({ ...props }) => {
-  const [toggle, setToggle] = useState(false);
-  const handleToggle = () => {
-    setToggle(true)
-  }
   return (
     <div className="list-container">
-       {toggle && <Information address={props.address} />}
-      <div
-        onClick={handleToggle}
+      {/* <div
         className="username"
       >
         username: {props.username}
       </div>
       <div>
         name: {props.first_name} {props.last_name}
-      </div>
+      </div> */}
+      <table>
+        <thead>
+          <tr>
+            <th>username</th>
+            <th>firstname</th>
+            <th>lastname</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{props.username}</td>
+            <td>{props.first_name}</td>
+            <td>{props.last_name}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
